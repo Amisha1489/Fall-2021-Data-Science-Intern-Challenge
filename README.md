@@ -22,7 +22,7 @@ Question 2: For this question you’ll need to use SQL. Follow this link to acce
 a.	How many orders were shipped by Speedy Express in total?
 
 Query - SELECT count(ShipperID) FROM orders WHERE ShipperID in (SELECT ShipperID FROM Shippers WHERE ShipperName = "Speedy Express")
-Answer – 54
+/nAnswer – 54
 
 b.	What is the last name of the employee with the most orders?
 
