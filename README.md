@@ -22,16 +22,16 @@ Question 2: For this question you’ll need to use SQL. Follow this link to acce
 a.	How many orders were shipped by Speedy Express in total?
 
 Query - SELECT count(ShipperID) FROM orders WHERE ShipperID in (SELECT ShipperID FROM Shippers WHERE ShipperName = "Speedy Express")
-/nAnswer – 54
+# Answer – 54
 
 b.	What is the last name of the employee with the most orders?
 
 Query - SELECT LastName FROM Employees where EmployeeID in (SELECT EmployeeID from Orders group By EmployeeID order by count(OrderID) desc limit 1)
-Answer – Peacock
+# Answer – Peacock
 
 c.	What product was ordered the most by customers in Germany?
 
 Query – SELECT ProductName FROM Products WHERE ProductID in (SELECT ProductID FROM OrderDetails WHERE OrderID in (SELECT OrderID FROM Orders WHERE CustomerID in (SELECT CustomerID FROM Customers WHERE Country = "Germany")) GROUP BY ProductID ORDER BY sum(Quantity) desc LIMIT 1)
-Answer - Boston Crab Meat
+# Answer - Boston Crab Meat
 
 
