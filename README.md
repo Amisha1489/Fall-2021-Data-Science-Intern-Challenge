@@ -9,7 +9,9 @@ https://github.com/Amisha1489/Fall-2021-Data-Science-Intern-Challenge/blob/main/
 ### a.	Think about what could be going wrong with our calculation. Think about a better way to evaluate this data. 
 After looking into the data set, I found out that there are possible outliers makes the value of AOV very high. These outliers consist of two kinds of data.
 1. For user_id – 607, there are 17 orders and each order consists of 2000 units. 
-2. shop_id – 78 has priced its shoe at $25,725. For the same metric I would either remove these outliers data and recalculate AOV with the remaining data set and that value turns out be $302.52 or we can calculate the median for the same metric as it turns out that 75% of data falls below 390 as shown in the output from the code.
+2. shop_id – 78 has priced its shoe at $25,725. 
+
+For the same metric I would either remove these outliers data and recalculate AOV with the remaining data set and that value turns out be $302.52 or we can calculate the median for the same metric as it turns out that 75% of data falls below 390 as shown in the output from the code.
 
 ### b.	What metric would you report for this dataset?
 I would calculate the median on the column order_amount
