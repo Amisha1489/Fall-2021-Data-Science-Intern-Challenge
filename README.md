@@ -7,7 +7,7 @@ On Shopify, we have exactly 100 sneaker shops, and each of these shops sells onl
 https://github.com/Amisha1489/Fall-2021-Data-Science-Intern-Challenge/blob/main/Question1.ipynb
 
 ### a.	Think about what could be going wrong with our calculation. Think about a better way to evaluate this data. 
-After looking into the data set, I found out that there possible outliers makes the value of AOV very high. These outliers are consist of two kinds of data.
+After looking into the data set, I found out that there are possible outliers makes the value of AOV very high. These outliers consist of two kinds of data.
 1. For user_id – 607, there are 17 orders and each order consists of 2000 units. 
 2. shop_id – 78 has priced its shoe at $25,725. For the same metric I would either remove these outliers data and recalculate AOV with the remaining data set and that value turns out be $302.52 or we can calculate the median for the same metric as it turns out that 75% of data falls below 390 as shown in the output from the code.
 
